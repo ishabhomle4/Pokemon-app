@@ -1,70 +1,59 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pokemon-app
 
-## Available Scripts
+This is a full-stack application designed to manage Pokémon data. It allows users to add, edit, and delete Pokémon records. The application consists of a React frontend and an Express backend, connected to a JSON file for data storage.
+## Features
+Add Pokémon: Users can add new Pokémon with various attributes.
+List Pokémon: View a list of all added Pokémon with options to edit or delete.
+Additional Pokémon: Add multiple Pokémon at once for a selected owner.
+Home Page: Display Pokémon with interactive actions such as move, freeze, and disappear.
 
-In the project directory, you can run:
+### Technologies Used
 
-### `npm start`
+Frontend: React, React Router
+Backend: Node.js, Express
+Database: JSON file (used as a mock database)
+Styling: Custom CSS (no CSS frameworks used)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### steps
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation and Setup
+Follow these steps to get the application running on your local machine:
 
-### `npm test`
+1. Clone the Repository
+To get a copy of this project, clone the repository using the following command:
+ ## git clone https://github.com/ishabhomle4/Pokemon-app.git
+  ## cd Pokemon-app  
+2. Install Dependencies
+   cd client
+   npm install
+  cd server
+  npm install
+or you can install globally as well.
+3. Ensure that the backend is set up to handle data storage in a JSON file. No additional configuration should be needed unless you change the data storage method.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Run the Application
+1.For client that means for frontend 
+make sure you are in client
+cd client
+npm start
+2.For Backend
+node server.js
 
-### `npm run build`
+## Access the Application
+Open your web browser and navigate to:
+http://localhost:3000 - for frontend
+ http://localhost:3001 - for backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Application Structure
+Frontend/ client
+1. src/App.js: Main application component handling routing.
+2. src/components/Navigation.js: Navigation bar component.
+3. src/components/AddPokemon.js: Component for adding new Pokémon.
+4. src/components/PokemonList.js: Component for listing and managing Pokémon.
+5. src/components/AddPokemonAdditional.js: Component for adding multiple Pokémon at once.
+6. src/pages/HomePage.js: Home page displaying Pokémon with interactive actions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Backend
+server.js: Main server file configuring Express routes.
+data.json: where the data of pokemon is stored based on user activity
